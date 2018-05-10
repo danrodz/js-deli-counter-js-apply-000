@@ -19,7 +19,6 @@ function nowServing() {
     return "Currently serving " + (nowServingNum++) + ".";
     }
   else {
-    nowServingNum++;
     return "There is nobody waiting to be served!";
   }
 }
