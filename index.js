@@ -1,16 +1,21 @@
 // beginning of the day, empty arr
 var katzDeliLine = [];
+var totalcustomers = 0;
+var nowServingNum = 0;
+
 
 // takes the arr and push it a new name to it and returns
 // a string with the name and the position from the arr
-function takeANumber(katzDeliLine, name) {
-  return ("Welcome, " + name + ". You are number " + (katzDeliLine.push(name)) + " in line.");
+function takeANumber(katzDeliLine) {
+  totalcustomers++;
+  return ("Welcome!"+ "You are number "  + totalcustomers + " of the day.");
 }
 
 // takes arr and checks if there are items in arr and returns first elem
 // if empty returns a string
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length) {
+function nowServing() {
+  if (totalcustomers) {
+    nowServing++
     return "Currently serving " + (katzDeliLine.shift()) + ".";
     }
   else {
