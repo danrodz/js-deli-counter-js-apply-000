@@ -14,7 +14,7 @@ function takeANumber(katzDeliLine) {
 // takes arr and checks if there are items in arr and returns first elem
 // if empty returns a string
 function nowServing() {
-  if ()
+ 
   if (totalcustomers && nowServingNum < totalcustomers) {
     return "Currently serving " + (nowServingNum++) + ".";
     }
