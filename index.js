@@ -14,11 +14,12 @@ function takeANumber(katzDeliLine) {
 // takes arr and checks if there are items in arr and returns first elem
 // if empty returns a string
 function nowServing() {
-  if (totalcustomers) {
-    nowServing++
-    return "Currently serving " + (katzDeliLine.shift()) + ".";
+  if (totalcustomers && nowServingNum < totalcustomers) {
+    nowServingNum++;
+    return "Currently serving " + (nowServingNum) + ".";
     }
   else {
+    nowServingNum++;
     return "There is nobody waiting to be served!";
   }
 }
